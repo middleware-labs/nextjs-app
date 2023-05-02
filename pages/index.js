@@ -61,7 +61,7 @@ export default function Home() {
               Docs <span>-&gt;</span>
             </h2>
             <p>
-              Find in-depth information about Next.js features and&nbsp;APIss.
+              Find in-depth information about Next.js features and&nbsp;APIsssssss.
             </p>
           </a>
 
