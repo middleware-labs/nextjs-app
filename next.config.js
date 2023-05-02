@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig =
-
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   experimental: {
     trace: {
@@ -9,3 +7,5 @@ module.exports = {
     },
   },
 }
+
+module.exports = nextConfig
