@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
+    instrumentationHook: true,
     trace: {
       serviceName: 'vercel-testing-service'
     },
