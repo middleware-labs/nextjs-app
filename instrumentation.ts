@@ -1,11 +1,11 @@
 // instrumentation.ts
 // @ts-ignore
-// import { track } from '@middleware.io/agent-apm-nextjs';
-import {SemanticResourceAttributes} from "@opentelemetry/semantic-conventions";
+import { track } from '@middleware.io/agent-apm-nextjs';
+/*import {SemanticResourceAttributes} from "@opentelemetry/semantic-conventions";
 import {NodeTracerProvider, SimpleSpanProcessor} from "@opentelemetry/sdk-trace-node";
 import {Resource} from "@opentelemetry/resources";
 import {OTLPTraceExporter} from "@opentelemetry/exporter-trace-otlp-http";
-import process from 'process';
+import process from 'process';*/
 
 export function register() {
     /*track({
@@ -14,7 +14,7 @@ export function register() {
         target: "vercel",
     });*/
 
-    if (process.env.NEXT_RUNTIME !== 'nodejs') {
+    /*if (process.env.NEXT_RUNTIME !== 'nodejs') {
         return;
     }
 
@@ -56,5 +56,5 @@ export function register() {
 
     provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter(configUrl)));
 
-    return provider;
+    return provider;*/
 }
