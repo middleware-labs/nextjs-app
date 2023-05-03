@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { trace, context } from '@opentelemetry/api'
-import { Resource } from '@opentelemetry/resources'
+/*import { Resource } from '@opentelemetry/resources'
 import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions'
 import {
     BasicTracerProvider,
@@ -17,7 +17,7 @@ const provider = new BasicTracerProvider({
 
 provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter()))
 provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()))
-provider.register()
+provider.register()*/
 const tracer = trace.getTracer("next-app-tracer");
 
 

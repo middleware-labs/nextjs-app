@@ -1,18 +1,19 @@
 // instrumentation.ts
 // import { registerOTel } from '@vercel/otel'
-// 'use strict';
-// import { Resource } from "@opentelemetry/resources";
-// import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
-// import { NodeTracerProvider, SimpleSpanProcessor } from "@opentelemetry/sdk-trace-node";
-// import { OTLPTraceExporter } from "@opentelemetry/exporter-trace-otlp-http";
+'use strict';
+import { Resource } from "@opentelemetry/resources";
+import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
+import { NodeTracerProvider, SimpleSpanProcessor } from "@opentelemetry/sdk-trace-node";
+import { OTLPTraceExporter } from "@opentelemetry/exporter-trace-otlp-http";
+import process from 'process';
 
 export function register() {
     // registerOTel('vercel-testing-service-instrumentation')
-    /*if (process.env.NEXT_RUNTIME === 'nodejs') {
+    if (process.env.NEXT_RUNTIME === 'nodejs') {
         const resourceAttributes = {
-            [SemanticResourceAttributes.SERVICE_NAME]: 'Service-one',
+            [SemanticResourceAttributes.SERVICE_NAME]: 'service-name-12',
             ['mw_agent']: true,
-            ['project.name']: 'Project-one',
+            ['project.name']: 'project-name-12',
         };
 
         const provider = new NodeTracerProvider({
@@ -24,5 +25,5 @@ export function register() {
         provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter()));
 
         return provider;
-    }*/
+    }
 }
