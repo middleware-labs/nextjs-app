@@ -10,8 +10,8 @@ export default async function handler(req, res) {
             "http.method": req.method,
             "http.url": req.url,
         },
-    }, context.active());
-    const ms = Math.floor(Math.random() * 1000);*/
+    }, context.active());*/
+    const ms = Math.floor(Math.random() * 1000);
     // span.setAttribute("sleep", ms);
     // await new Promise((resolve) => setTimeout(resolve, ms));
 
