@@ -1,5 +1,5 @@
 // instrumentation.ts
-import { registerOTel } from '@vercel/otel'
+// import { registerOTel } from '@vercel/otel'
 // 'use strict';
 // import { Resource } from "@opentelemetry/resources";
 // import { SemanticResourceAttributes } from "@opentelemetry/semantic-conventions";
@@ -7,7 +7,7 @@ import { registerOTel } from '@vercel/otel'
 // import { OTLPTraceExporter } from "@opentelemetry/exporter-trace-otlp-http";
 
 export function register() {
-    registerOTel('vercel-testing-service-instrumentation')
+    // registerOTel('vercel-testing-service-instrumentation')
     /*if (process.env.NEXT_RUNTIME === 'nodejs') {
         const resourceAttributes = {
             [SemanticResourceAttributes.SERVICE_NAME]: 'Service-one',
