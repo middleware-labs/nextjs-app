@@ -1,34 +1,34 @@
 // instrumentation.ts
 // @ts-ignore
-// import { track } from '@middleware.io/agent-apm-nextjs';
-import {SemanticResourceAttributes} from "@opentelemetry/semantic-conventions";
+import { track } from '@middleware.io/agent-apm-nextjs';
+/*import {SemanticResourceAttributes} from "@opentelemetry/semantic-conventions";
 import {NodeTracerProvider, SimpleSpanProcessor} from "@opentelemetry/sdk-trace-node";
 import {Resource} from "@opentelemetry/resources";
 import {OTLPTraceExporter} from "@opentelemetry/exporter-trace-otlp-http";
-import process from 'process';
+import process from 'process';*/
 
 export function register() {
-    /*return track({
+    return track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
         target: "vercel",
-    });*/
+    });
 
-    if (process.env.NEXT_RUNTIME !== 'nodejs') {
+    /*if (process.env.NEXT_RUNTIME !== 'nodejs') {
         return;
     }
 
-    const args = {
+    /!*const args = {
         target: "vercel"
-    }
+    }*!/
 
     const config = {
         hostUrl: 'http://localhost:9320',
         projectName: "Project-" + process.pid,
         serviceName: "Service-" + process.pid,
-        accountKey: "",
-        target: "",
-        ...args,
+        accountKey: "vgvilfnfntfhvsnercuzlsemoiavrnvxbhcb",
+        target: "https://e212-59-144-126-168.ngrok-free.app:443",
+        // ...args,
     };
 
     const resourceAttributes = {
@@ -56,5 +56,5 @@ export function register() {
 
     provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter(configUrl)));
 
-    return provider;
+    return provider;*/
 }
