@@ -8,6 +8,11 @@ import { OTLPTraceExporter } from "@opentelemetry/exporter-trace-otlp-http";
 import process from 'process';
 
 export function register() {
+    /*track({
+        ser
+        pro
+        source: 'vercel'
+    })*/
     // registerOTel('vercel-testing-service-instrumentation')
     if (process.env.NEXT_RUNTIME === 'nodejs') {
         const resourceAttributes = {
@@ -22,7 +27,9 @@ export function register() {
 
         provider.register();
 
-        provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter()));
+        provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter(
+            {}
+        )));
 
         return provider;
     }
