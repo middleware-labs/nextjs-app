@@ -24,7 +24,10 @@ export function register() {
         projectName: "Project-" + process.pid,
         serviceName: "Service-" + process.pid,
         accountKey: "",
-        target: "vercel",
+        target: "",
+        ...{
+            target: "vercel",
+        }
     };
 
     const resourceAttributes = {
