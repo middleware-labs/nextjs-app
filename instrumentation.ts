@@ -8,11 +8,11 @@ import {OTLPTraceExporter} from "@opentelemetry/exporter-trace-otlp-http";
 import process from 'process';*/
 
 export function register() {
-    /*track({
+    track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
         target: "vercel",
-    });*/
+    });
 
     /*if (process.env.NEXT_RUNTIME !== 'nodejs') {
         return;
