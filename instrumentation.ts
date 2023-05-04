@@ -10,8 +10,6 @@ import process from 'process';*/
 
 export function register() {
 
-    globalThis.message="test message from instrumentation file. "
-
     // registerOTel('next-app')
 
     /*track({
