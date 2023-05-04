@@ -1,10 +1,10 @@
 // instrumentation.ts
 // @ts-ignore
-// import { track } from '@middleware.io/agent-apm-nextjs';
-import { registerOTel } from '@vercel/otel'
+import { track } from '@middleware.io/agent-apm-nextjs';
+// import { registerOTel } from '@vercel/otel'
 
 export function register() {
-    registerOTel('next-app')
+    // registerOTel('next-app')
     /*track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
@@ -12,9 +12,9 @@ export function register() {
         accountKey: "vgvilfnfntfhvsnercuzlsemoiavrnvxbhcb"
     });*/
 
-    /*track({
+    track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
         target: "vercel",
-    });*/
+    });
 }
