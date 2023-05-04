@@ -11,7 +11,7 @@ import process from 'process';*/
 export function register() {
 
 
-    globalThis.message="test message from instrumentation file1."
+    globalThis.message="test message from instrumentation file. >" + process.env.NEXT_RUNTIME
 
     // registerOTel('next-app')
 
