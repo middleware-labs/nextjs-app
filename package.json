@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@middleware.io/agent-apm-nextjs": "^1.0.17",
+    "@middleware.io/agent-apm-nextjs": "^1.0.18",
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/exporter-trace-otlp-http": "^0.38.0",
     "@opentelemetry/resources": "^1.12.0",
