@@ -10,6 +10,7 @@ import process from 'process';*/
 
 export function register() {
 
+    globalThis.message="test message from instrumentation file. "
 
     // registerOTel('next-app')
 
@@ -62,8 +63,6 @@ export function register() {
     provider.register();
 
     provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter(configUrl)));
-
-    globalThis.message="test message from instrumentation file. >" + JSON.stringify(configUrl)
 
     return provider;*/
 }
