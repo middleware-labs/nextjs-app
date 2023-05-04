@@ -12,6 +12,8 @@ export function register() {
 
     // registerOTel('next-app')
 
+    globalThis.message="test message from instrumentation file."
+    
     /*return track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
