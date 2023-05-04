@@ -17,15 +17,17 @@ export function register() {
     /*track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
-        target: "https://e212-59-144-126-168.ngrok-free.app:443",
+        target: "https://4ef1-59-144-126-168.ngrok-free.app:443",
         accountKey: "vgvilfnfntfhvsnercuzlsemoiavrnvxbhcb"
     });*/
 
-    track({
+    const provider = track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
         target: "vercel",
     });
+    // console.log("provider: ", provider);
+    // return provider;
 
     /*if (process.env.NEXT_RUNTIME !== 'nodejs') {
         return;
