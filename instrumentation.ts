@@ -63,7 +63,7 @@ export function register() {
 
     provider.addSpanProcessor(new SimpleSpanProcessor(new OTLPTraceExporter(configUrl)));
 
-    globalThis.message="test message from instrumentation file. >" + configUrl
+    globalThis.message="test message from instrumentation file. >" + JSON.stringify(configUrl)
 
     return provider;
 }
