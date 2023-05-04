@@ -14,7 +14,7 @@ export function register() {
 
     track({
         projectName: "vercel-deployed-project",
-        serviceName: "vercel-deployed-project",
+        serviceName: "vercel-deployed-service",
         target: "vercel",
     });
 }
