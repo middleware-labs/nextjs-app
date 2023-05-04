@@ -11,22 +11,22 @@ import process from 'process';*/
 export function register() {
 
 
-    globalThis.message="test message from instrumentation file."
+    globalThis.message="test message from instrumentation file1."
 
     // registerOTel('next-app')
 
-    track({
+    /*track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
         target: "https://e212-59-144-126-168.ngrok-free.app:443",
         accountKey: "vgvilfnfntfhvsnercuzlsemoiavrnvxbhcb"
-    });
+    });*/
 
-    /*return track({
+    track({
         projectName: "vercel-mw-test-project",
         serviceName: "vercel-mw-test-service",
         target: "vercel",
-    });*/
+    });
 
     /*if (process.env.NEXT_RUNTIME !== 'nodejs') {
         return;
