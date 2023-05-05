@@ -13,8 +13,8 @@ export function register() {
     });*/
 
     track({
-        projectName: "vercel-deployed-project311",
-        serviceName: "vercel-deployed-service311",
+        projectName: "vercel-project-311",
+        serviceName: "vercel-service-311",
         target: "vercel",
     });
 }
