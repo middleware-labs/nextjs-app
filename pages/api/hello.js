@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     // span.setAttribute("sleep", ms);
     // await new Promise((resolve) => setTimeout(resolve, ms));
 
-    res.status(200).json({ greetings: `Hello There.. ${ms}` });
+    res.status(200).json({ greetings: `Hello There.. ${ms}-${globalThis.message}` });
 
     // span.end();
 }
