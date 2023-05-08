@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { trace, context } from '@opentelemetry/api'
-const tracer = trace.getTracer("next-app-tracer");
+// import { trace, context } from '@opentelemetry/api'
+// const tracer = trace.getTracer("next-app-tracer");
 
 export default async function handler(req, res) {
     /*const span = tracer.startSpan("helloHandler", {
