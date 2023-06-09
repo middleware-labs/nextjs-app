@@ -1,18 +1,14 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-// import { trace, context } from '@opentelemetry/api'
-// const tracer = trace.getTracer("next-app-tracer");
+import tracker from '@middleware.io/agent-apm-nextjs';
 
 export default async function handler(req, res) {
-    /*const span = tracer.startSpan("helloHandler", {
-        attributes: {
-            "http.method": req.method,
-            "http.url": req.url,
-        },
-    }, context.active());*/
-    const ms = Math.floor(Math.random() * 1000);
-    // span.setAttribute("sleep", ms);
-    // await new Promise((resolve) => setTimeout(resolve, ms));
+    tracker.info("TESTING INFO FROM HELLO API.");
+    tracker.error("TESTING ERROR FROM HELLO API.");
+    tracker.warn("TESTING WARN FROM HELLO API.", {
+        "tester": "Jagrut",
+    });
+    tracker.debug("TESTING DEBUG FROM HELLO API.");
 
+    const ms = Math.floor(Math.random() * 1000);
     res.status(200).json({ greetings: `Hello There.. ${ms}-${globalThis.message}` });
 
     // span.end();
