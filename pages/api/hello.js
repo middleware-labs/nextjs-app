@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     tracker.info("TESTING INFO FROM HELLO API.");
     tracker.error("TESTING ERROR FROM HELLO API.");
     tracker.warn("TESTING WARN FROM HELLO API.", {
-        "tester": "Jagrut",
+        "tester": "Jagrut123",
     });
     tracker.debug("TESTING DEBUG FROM HELLO API.");
 
