@@ -17,5 +17,5 @@ export function register() {
         target: "vercel",
     });
 
-    // tracker.info("One time INSTRUMENTATION DONE");
+    tracker.info("One time INSTRUMENTATION DONE");
 }
