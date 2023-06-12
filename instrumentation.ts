@@ -12,8 +12,9 @@ export function register() {
         accountKey: "kyrqzxybzmqfoaoqwclrposbacczzfgztpmk"
     });*/
     tracker.track({
-        projectName: "vercel-project-999",
-        serviceName: "vercel-service-999",
+        projectName: "vercel-project-1000",
+        serviceName: "vercel-service-1000",
+        accountKey: "kyrqzxybzmqfoaoqwclrposbacczzfgztpmk",
         target: "vercel",
     });
 
