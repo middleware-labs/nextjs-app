@@ -14,7 +14,7 @@ export function register() {
     tracker.track({
         projectName: "vercel-project-1000",
         serviceName: "vercel-service-1000",
-        accountKey: "uqlzuvwyqxqrtbalsyvfbukayoecryilbwmo",
+        accountKey: "xusuusalpvush63ud7zcg8bi3mauuptds528",
         target: "vercel",
     });
 
