@@ -9,7 +9,5 @@ export default async function handler(req, res) {
     tracker.error("Error Sample");
 
     const ms = Math.floor(Math.random() * 1000);
-    res.status(200).json({ greetings: `Hello There.. ${ms}-${globalThis.message}` });
-
-    // span.end();
+    res.status(200).json({ greetings: `Hello API Called..` });
 }
