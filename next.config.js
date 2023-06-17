@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        instrumentationHook: true,
-        appDir: true,
-    },
+  experimental: {
+    instrumentationHook: true,
+  },
 }
 
 module.exports = nextConfig
