@@ -12,10 +12,10 @@ export function register() {
 
     /*tracker.track({
         projectName: "ABC-1",
-        serviceName: "ABC-2",
+        serviceName: "ABC-1",
         accountKey: "xusuusalpvush63ud7zcg8bi3mauuptds528",
         target: "https://p2i13hg.middleware.io:443",
     });*/
 
-    tracker.info("ONE TIME INSTRUMENTATION DONE with Third TRY..");
+    tracker.info("yoyo111 ONE TIME INSTRUMENTATION DONE with Third TRY..");
 }
