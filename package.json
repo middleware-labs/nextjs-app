@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@middleware.io/agent-apm-nextjs": "^1.0.37",
+    "@middleware.io/agent-apm-nextjs": "^1.0.36",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "next": "13.4.6",
+    "process": "^0.11.10",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
