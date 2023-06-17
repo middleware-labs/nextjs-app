@@ -17,5 +17,5 @@ export function register() {
         target: "https://p2i13hg.middleware.io:443",
     });*/
 
-    tracker.info("ONE TIME INSTRUMENTATION DONE with Third TRY..");
+    tracker.info("toto ONE TIME INSTRUMENTATION DONE with Third TRY..");
 }
