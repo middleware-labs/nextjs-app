@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@middleware.io/agent-apm-nextjs": "^1.0.37",
-    "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "next": "13.4.6",
