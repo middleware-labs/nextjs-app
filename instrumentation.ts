@@ -1,9 +1,9 @@
 // @ts-ignore
-import tracker from '@middleware.io/agent-apm-nextjs';
+import tracker, {track} from '@middleware.io/agent-apm-nextjs';
 
 export function register() {
 
-    tracker.track({
+    track({
         projectName: "vercel-project-1000",
         serviceName: "vercel-service-1000",
         accountKey: "xusuusalpvush63ud7zcg8bi3mauuptds528",
