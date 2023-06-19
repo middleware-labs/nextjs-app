@@ -1,9 +1,9 @@
 // @ts-ignore
-import tracker, {track} from '@middleware.io/agent-apm-nextjs';
+import tracker from '@middleware.io/agent-apm-nextjs';
 
 export function register() {
 
-    track({
+    tracker.track({
         projectName: "vercel-project-1000",
         serviceName: "vercel-service-1000",
         accountKey: "xusuusalpvush63ud7zcg8bi3mauuptds528",
@@ -17,5 +17,5 @@ export function register() {
         target: "https://p2i13hg.middleware.io:443",
     });*/
 
-    tracker.info("ONE TIME INSTRUMENTATION DONE.");
+    tracker.info("ONE TIME INSTRUMENTATION DONE with SECOND TRY..");
 }
