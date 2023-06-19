@@ -17,5 +17,5 @@ export function register() {
         target: "https://p2i13hg.middleware.io:443",
     });*/
 
-    tracker.info("pepe ONE TIME INSTRUMENTATION DONE with SECOND TRY..");
+    tracker.info("pepei ONE TIME INSTRUMENTATION DONE with SECOND TRY..");
 }
