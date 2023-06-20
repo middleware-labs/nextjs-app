@@ -1,5 +1,6 @@
 // @ts-ignore
 import tracker from '@middleware.io/agent-apm-nextjs';
+// const tracker = require('@middleware.io/node-apm');
 
 export function register() {
 
@@ -11,12 +12,16 @@ export function register() {
     });
 
     /*tracker.track({
-        projectName: "ABC-1",
-        serviceName: "ABC-2",
+        projectName: "ABCxyz-1004",
+        serviceName: "ABCxyz-2004",
         accountKey: "xusuusalpvush63ud7zcg8bi3mauuptds528",
         target: "https://p2i13hg.middleware.io:443",
     });*/
 
-    tracker.info("ONE TIME INSTRUMENTATION DONE..");
-    tracker.warn("With few Warnings.");
+    /*tracker.track({
+        projectName:"Node1-1001",
+        serviceName:"Node1-2001",
+    })*/
+
+    tracker.info("Twooo222211 TIME INSTRUMENTATION DONE with SECOND TRY..");
 }
