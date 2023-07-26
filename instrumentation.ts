@@ -5,8 +5,8 @@ import tracker from '@middleware.io/agent-apm-nextjs';
 export function register() {
 
     tracker.track({
-        projectName: "vercel-project-61",
-        serviceName: "vercel-service-62",
+        projectName: "vercel-project-65",
+        serviceName: "vercel-service-66",
         accessToken: "xusuusalpvush63ud7zcg8bi3mauuptds528",
         target: "vercel",
     });
