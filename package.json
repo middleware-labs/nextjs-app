@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@middleware.io/agent-apm-nextjs": "^1.1.0-rc.4",
+    "@middleware.io/agent-apm-nextjs": "^1.1.0",
     "eslint": "^8.42.0",
     "eslint-config-next": "^13.4.4",
     "mysql": "^2.18.1",

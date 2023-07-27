@@ -5,8 +5,8 @@ import tracker from '@middleware.io/agent-apm-nextjs';
 export function register() {
 
     tracker.track({
-        projectName: "vercel-project-65",
-        serviceName: "vercel-service-66",
+        projectName: "vercel-project-71",
+        serviceName: "vercel-service-72",
         accessToken: "xusuusalpvush63ud7zcg8bi3mauuptds528",
         target: "vercel",
     });
@@ -34,5 +34,5 @@ export function register() {
         serviceName:"Node1-2001",
     })*/
 
-    tracker.info("Profiling matter continues...123");
+    tracker.info("Profiling matter continues...12344");
 }
